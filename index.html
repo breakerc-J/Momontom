@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="src/css/reset.css" rel="stylesheet" />
+  <link href="src/css/index.css" rel="stylesheet" />
+  <title>Momontom</title>
+</head>
+<body>
+  <div id="wrap">
+    <div class="momontom__popup">
+      <form class="momontom__popup-form">
+        <label for="askUsername">What's Ur Name?</label>
+        <input type="text" id="askUsername" placeholder="Tell me your name" />
+        <button class="btn__submit">✔</button>
+      </form>
+    </div>
+    <div class="momontom__container">
+      <div class="momontom__header">
+        <div class="header__weather">
+          <p></p>
+        </div>
+        <div class="header__greeting">
+          <p>
+            <span class="header__greeting-text">Hakuna Matata</span>
+            <span class="header__greeting-user"></span>
+          </p>
+        </div>
+        <div class="header__clock">
+          <p><span class="header__clock-hourAndMinutes">00:00</span></p>
+        </div>
+        <div class="header__date">
+          <p>Monday, 14th, december</p>
+        </div>
+        <div class="header__info">
+          <ul class="header__info-ul">
+            <li class="header__info-total">
+              <div class="header__info-num">0</div>
+              <div class="header__info-text">Total</div>
+            </li>
+            <li class="header__info-panding">
+              <div class="header__info-num">0</div>
+              <div class="header__info-text panding">Panding</div>
+            </li>
+            <li class="header__info-done">
+              <div class="header__info-num">0</div>
+              <div class="header__info-text">Done</div>
+            </li>
+            <li class="header__info-achievement">
+              <div class="header__info-num"><span class="num"></span><span class="unit">%</span></div>
+              <div class="header__info-text">Achievement</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="momontom__body">
+        <form class="body__form">
+          <div class="body__form-position">
+            <label for="body__form-input"></label>
+            <input type="text" id="body__form-input" placeholder="Write to do!!" />
+            <button class="btn__submit">✔</button>
+          </div>
+        </form>
+        <div class="body__list">
+          <ul class="body__list-ul">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/e4b75eb546.js" crossorigin="anonymous"></script>
+  <script src="src/js/utils.js"></script>
+  <script src="src/js/clock.js"></script>
+  <script src="src/js/weather.js"></script>
+  <script src="src/js/greeting.js"></script>
+  <script src="src/js/date.js"></script>
+  <script src="src/js/todo.js"></script>
+  <script src="src/js/bg.js"></script>
+  <script src="src/js/info.js"></script>
+</body>
+</html>
